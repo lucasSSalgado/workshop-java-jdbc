@@ -18,7 +18,7 @@ public class Utils {
 		}
 		catch (NumberFormatException e) {
 			return null;
-		}
-		
-}
+		}		
+	}
+	
 }
