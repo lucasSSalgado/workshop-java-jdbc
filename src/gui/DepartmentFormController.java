@@ -21,13 +21,13 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import model.entities.Department;
 import model.exceptions.ValidationException;
-import model.services.DepartmentSevice;
+import model.services.DepartmentService;
 
 public class DepartmentFormController implements Initializable{
 	
 	private Department entity;
 	
-	private DepartmentSevice service;
+	private DepartmentService service;
 	
 	private List<DataChangeListener> dcls = new ArrayList<>();
 	
@@ -108,7 +108,7 @@ public class DepartmentFormController implements Initializable{
 		this.entity = entity;
 		}
 	
-	public void setDepartmentService(DepartmentSevice service) {
+	public void setDepartmentService(DepartmentService service) {
 		this.service = service;
 	}
 	
